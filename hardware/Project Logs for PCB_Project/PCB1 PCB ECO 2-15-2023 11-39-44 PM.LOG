@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=NetC6_1 Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-2
+Removed Member From Class: ClassName=Power Member=J2
+Removed Member From Class: ClassName=Power Member=SW2
+Added Component: Designator=S1(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S2(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S3(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S4(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Member To Class: ClassName=Power Member=Component S1 Screw
+Added Member To Class: ClassName=Power Member=Component S2 Screw
+Added Member To Class: ClassName=Power Member=Component S3 Screw
+Added Member To Class: ClassName=Power Member=Component S4 Screw
+Added Member To Class: ClassName=Power Member=Component SW1 SW-4P-B
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power
