@@ -1,0 +1,11 @@
+Added Pin To Net: NetName=NetU1_13 Pin=U1-13
+Added Pin To Net: NetName=NetU1_13 Pin=U2-11
+Added Net: Name=NetU1_13
+Added Pin To Net: NetName=NetU1_16 Pin=U1-16
+Added Pin To Net: NetName=NetU1_16 Pin=U2-12
+Added Net: Name=NetU1_16
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power

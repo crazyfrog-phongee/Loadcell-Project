@@ -1,0 +1,18 @@
+Added Pin To Net: NetName=E Pin=DS1-1
+Added Pin To Net: NetName=D Pin=DS1-2
+Added Pin To Net: NetName=DP Pin=DS1-3
+Added Pin To Net: NetName=C Pin=DS1-4
+Added Pin To Net: NetName=G Pin=DS1-5
+Added Pin To Net: NetName=DIG0 Pin=DS1-6
+Added Pin To Net: NetName=B Pin=DS1-7
+Added Pin To Net: NetName=DIG1 Pin=DS1-8
+Added Pin To Net: NetName=DIG2 Pin=DS1-9
+Added Pin To Net: NetName=F Pin=DS1-10
+Added Pin To Net: NetName=A Pin=DS1-11
+Added Pin To Net: NetName=DIG3 Pin=DS1-12
+Added Member To Class: ClassName=7SEG Member=Component DS1 7SEGQ
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power

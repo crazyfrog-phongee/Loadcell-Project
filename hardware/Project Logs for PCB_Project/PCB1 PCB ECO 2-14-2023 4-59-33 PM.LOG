@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=C14 Old Footprint=JP6 New Footprint=CON6
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=LCD
+Added Room: Name=MCU
+Added Room: Name=Power

@@ -1,0 +1,18 @@
+Added Component: Designator=U3(SOP16)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/CH340C/WCH/view-part/5428851/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "WCH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CH340C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CH340C/WCH/view-part/5428851/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=U3-1
+Added Pin To Net: NetName=NetU1_31 Pin=U3-2
+Added Pin To Net: NetName=NetU1_30 Pin=U3-3
+Added Pin To Net: NetName=NetC18_2 Pin=U3-4
+Added Pin To Net: NetName=D_P Pin=U3-5
+Added Pin To Net: NetName=D_N Pin=U3-6
+Added Pin To Net: NetName=5V Pin=U3-16
+Added Member To Class: ClassName=Debug Member=Component U3 CH340C

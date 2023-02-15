@@ -1,0 +1,5 @@
+Added Component: Designator=Q1(SOT23-BEC)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = ""; Value = "A1013"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "A1015"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=schematic Member=Component Q1 8550

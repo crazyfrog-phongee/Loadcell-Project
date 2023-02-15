@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=IC4 Old Footprint=SOT95P280X145-6N New Footprint=FS8205A
+Added Pin To Net: NetName=GND Pin=IC4-7
+Added Pin To Net: NetName=NetIC4_1 Pin=IC4-8
+Added Room: Name=External ADC
+Added Room: Name=LCD
+Added Room: Name=MCU
+Added Room: Name=Power

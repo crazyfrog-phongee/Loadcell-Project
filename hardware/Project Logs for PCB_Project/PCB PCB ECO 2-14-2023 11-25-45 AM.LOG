@@ -1,0 +1,16 @@
+Removed Member From Class: ClassName=schematic Member=Q1
+Added Component: Designator=T(SOT23-BEC)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Nexperia USA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "BC857"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOT-23 NXP Semiconductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/BC857/Nexperia%20USA%20Inc./view-part/53064/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=HX_AVDD Pin=T-C
+Added Pin To Net: NetName=VCC Pin=T-E
+Added Pin To Net: NetName=NetT_B Pin=T-B
+Added Pin To Net: NetName=NetT_B Pin=U1-2
+Added Net: Name=NetT_B
+Added Member To Class: ClassName=schematic Member=Component T S8550

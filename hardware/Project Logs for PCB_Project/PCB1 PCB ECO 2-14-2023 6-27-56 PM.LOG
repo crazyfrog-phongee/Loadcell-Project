@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=DS1 NewDesignator=DS2
+Added Component: Designator=DS1(LED7SEG-4-0.36)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "LED 7Q SEG"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=7SEG Member=Component DS2 7SEGQ
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power

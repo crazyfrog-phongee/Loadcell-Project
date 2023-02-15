@@ -1,0 +1,6 @@
+Record=TopLevelDocument|FileName=connection.SchDoc
+Record=SheetSymbol|SourceDocument=connection.SchDoc|Designator=7SEG|SchDesignator=7SEG|FileName=[4]-DISPLAY.SchDoc|SymbolType=Normal|RawFileName=[4]-DISPLAY.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=connection.SchDoc|Designator=Debug|SchDesignator=Debug|FileName=[5]-COM.SchDoc|SymbolType=Normal|RawFileName=[5]-COM.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=connection.SchDoc|Designator=External ADC|SchDesignator=External ADC|FileName=[3]-ADC.SchDoc|SymbolType=Normal|RawFileName=[3]-ADC.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=connection.SchDoc|Designator=MCU|SchDesignator=MCU|FileName=[2]-MCU.SchDoc|SymbolType=Normal|RawFileName=[2]-MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=connection.SchDoc|Designator=Power|SchDesignator=Power|FileName=[1]-POWER.SchDoc|SymbolType=Normal|RawFileName=[1]-POWER.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

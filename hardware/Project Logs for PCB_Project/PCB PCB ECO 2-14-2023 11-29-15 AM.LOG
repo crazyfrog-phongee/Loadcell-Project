@@ -1,0 +1,6 @@
+Added Pin To Net: NetName=3V3 Pin=C1-2
+Added Pin To Net: NetName=3V3 Pin=T-E
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=3V3 Pin=U1-16
+Change Net Name : Old Net Name=NetD1_1 New Net Name=+5
+Added Room: Name=schematic

@@ -1,0 +1,26 @@
+Added Member To Class: ClassName=Power Member=Component C1 100nF
+Added Member To Class: ClassName=Power Member=Component C3 220uF
+Added Member To Class: ClassName=Power Member=Component C6 100nF
+Added Member To Class: ClassName=MCU Member=Component C8 10uF
+Added Member To Class: ClassName=MCU Member=Component C9 33pF
+Added Member To Class: ClassName=External ADC Member=Component C11 10uF
+Added Member To Class: ClassName=External ADC Member=Component C12 10uF
+Added Member To Class: ClassName=External ADC Member=Component C13 0.1uF
+Added Member To Class: ClassName=External ADC Member=Component C14 Header6
+Added Member To Class: ClassName=External ADC Member=Component C15 10uF
+Added Member To Class: ClassName=Power Member=Component IC1 RT9013
+Added Member To Class: ClassName=Power Member=Component IC4 FS8205A
+Added Member To Class: ClassName=Power Member=Component R2 1k
+Added Member To Class: ClassName=MCU Member=Component R8 10k
+Added Member To Class: ClassName=External ADC Member=Component R9 20k
+Added Member To Class: ClassName=External ADC Member=Component R10 8.2k
+Added Member To Class: ClassName=External ADC Member=Component R11 1k
+Added Member To Class: ClassName=External ADC Member=Component R12 1k
+Added Member To Class: ClassName=External ADC Member=Component T1 BC857
+Added Member To Class: ClassName=External ADC Member=Component U2 HX711
+Added Member To Class: ClassName=MCU Member=Component X1 8Mhz
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power

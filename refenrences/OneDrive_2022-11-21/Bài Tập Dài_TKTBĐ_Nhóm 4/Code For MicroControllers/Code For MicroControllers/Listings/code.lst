@@ -1,0 +1,189 @@
+C51 COMPILER V9.60.0.0   CODE                                                              01/23/2022 23:54:46 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE CODE
+OBJECT MODULE PLACED IN .\Objects\code.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE code.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\code
+                    -.lst) TABS(2) OBJECT(.\Objects\code.obj)
+
+line level    source
+
+   1          // Declare necessary libraries and short form for pins and modes.
+   2          #include <REGX52.H>
+   3          #include <stdio.h>
+   4          sbit LED = P1 ^ 3;
+   5          sbit SOC = P3 ^ 0;
+   6          sbit EOC = P3 ^ 1;
+   7          sbit SELECT = P3 ^ 4;
+   8          sbit MODE = P1 ^ 2;
+   9          sbit MODEOUT = P1 ^ 3;
+  10          sbit LCD_RS = P1 ^ 4;
+  11          sbit LCD_EN = P1 ^ 6;
+  12          sbit LCD_RW = P1 ^ 5;
+  13          #define LCD_DATA P2 // Declare the data pin.
+  14          #define CURRENT 0x01
+  15          #define VOLTAGE 0x00
+  16          
+  17          
+  18          /*----------------------------------------------------------------------*/
+  19          
+  20          
+  21          // Below are necessary functions to work with LCD.
+  22          
+  23          // Delay Function.
+  24          void Delay_ms(unsigned int t)    
+  25          {
+  26   1        unsigned int x, y;
+  27   1        for (x = 0; x < t; x++)
+  28   1        {
+  29   2          for (y = 0; y < 123; y++)
+  30   2            ;
+  31   2        }
+  32   1      }
+  33          
+  34          // Function to send instructions to the LCD.
+  35          void Lcd_cmd(unsigned char cmd)  
+  36          {
+  37   1        LCD_RW = 0;      // Select writing mode.
+  38   1        LCD_RS = 0;      // Select writing instruction mode.
+  39   1        LCD_DATA = cmd;  // cmd is the data to send.
+  40   1        LCD_EN = 0;
+  41   1        LCD_EN = 1;
+  42   1        if (cmd <= 0x02)
+  43   1        {
+  44   2          Delay_ms(2);
+  45   2        }
+  46   1        else
+  47   1        {
+  48   2          Delay_ms(1);
+  49   2        }
+  50   1      }
+  51          
+  52          
+  53          // Function to display an arbitrary character at the position of the cursor.
+  54          void Lcd_Char_Cp(char c)      
+C51 COMPILER V9.60.0.0   CODE                                                              01/23/2022 23:54:46 PAGE 2   
+
+  55          { 
+  56   1        LCD_RW = 0;
+  57   1        LCD_RS = 1;            // Select the mode to send data. 
+  58   1        LCD_DATA = c;          // c is the character to send.
+  59   1        LCD_EN = 0;
+  60   1        LCD_EN = 1;
+  61   1        Delay_ms(1);
+  62   1      }
+  63          
+  64          
+  65          // Function to send strings at the position of the cursor.
+  66          void Lcd_Out_Cp(char *str)      
+  67          {
+  68   1        unsigned char i = 0;
+  69   1        while (str[i] != 0)           // Send the characters of the string until get the NULL value.
+  70   1        {
+  71   2          Lcd_Char_Cp(str[i]);
+  72   2          i++;
+  73   2        }
+  74   1      }
+  75          
+  76          
+  77          // Function to move the position of the cursor and display the string to the screen.
+  78          void Lcd_Out(unsigned char row, unsigned char col, char *str)                                 
+  79          {
+  80   1        unsigned char cmd;
+  81   1        // Move the cursor to the necessary position.
+  82   1        cmd = (row == 1 ? 0x80 : 0xC0) + col - 1;
+  83   1        Lcd_cmd(cmd);
+  84   1        Lcd_Out_Cp(str);
+  85   1      }
+  86          
+  87          
+  88          // Function to init the LCD.
+  89          void Lcd_Init()                 
+  90          {
+  91   1        Lcd_cmd(0x30);
+  92   1        Delay_ms(5);
+  93   1        Lcd_cmd(0x30);
+  94   1        Delay_ms(1);
+  95   1        Lcd_cmd(0x30);
+  96   1        Lcd_cmd(0x38); // Initialization of 16X2 LCD in 8bit mode.
+  97   1        Lcd_cmd(0x01); // Clear display.
+  98   1        Lcd_cmd(0x0C); // Display ON Cursor OFF.
+  99   1      }
+ 100          
+ 101          
+ 102          /*----------------------------------------------------------------------*/
+ 103          
+ 104          
+ 105          // Below is the main program.
+ 106          // Define necessary variables.
+ 107          unsigned char sel = 0;
+ 108          char arr[30];
+ 109          unsigned int value = 0;
+ 110          unsigned int value1 = 0;
+ 111          int result;
+ 112          float voltage = 0;
+ 113          // Main program.
+ 114          int main()
+ 115            
+ 116          {
+C51 COMPILER V9.60.0.0   CODE                                                              01/23/2022 23:54:46 PAGE 3   
+
+ 117   1        Lcd_Init();
+ 118   1        TMOD = 0x01;
+ 119   1        while (1)
+ 120   1        {
+ 121   2          if (MODE == 1)
+ 122   2          {
+ 123   3            MODEOUT = CURRENT;
+ 124   3            sel = CURRENT;
+ 125   3          }
+ 126   2          else
+ 127   2          {
+ 128   3            MODEOUT = VOLTAGE;
+ 129   3            sel = VOLTAGE;
+ 130   3          }
+ 131   2          TH0 = 0xFC;
+ 132   2          TL0 = 0x00;
+ 133   2          SELECT = 0;
+ 134   2          SOC = 1;
+ 135   2          Delay_ms(1);
+ 136   2          SOC = 0;
+ 137   2          TR0 = 1;
+ 138   2          while (!TF0);
+ 139   2          TF0 = 0;
+ 140   2          TR0 = 0;
+ 141   2          SELECT = 1;
+ 142   2          TH0 = 0xFC;
+ 143   2          TL0 = 0x00;
+ 144   2          TR0 = 1;
+ 145   2          while (EOC);
+ 146   2          TR0 = 0;
+ 147   2          value1 = TH0;
+ 148   2          value = TL0;
+ 149   2          TH0 = 0xFC;
+ 150   2          TL0 = 0x00;
+ 151   2          TF0 = 0;
+ 152   2          result = ((value1 - 252) << 8) + value;
+ 153   2          voltage = (((float)result / (float)1030) * 5);
+ 154   2          if (sel == CURRENT)
+ 155   2            sprintf(arr, "Voltage:%0.002fV", voltage);
+ 156   2          else
+ 157   2            sprintf(arr, "Current:%dmA", (int)((voltage / 5) * 1000));
+ 158   2          Lcd_Out(1, 1, arr);
+ 159   2          Delay_ms(100);
+ 160   2        }
+ 161   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    432    ----
+   CONSTANT SIZE    =     30    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     41       7
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,204 @@
+Removed Pin From Net: NetName=GND Pin=JP1-1
+Removed Pin From Net: NetName=5V Pin=JP1-2
+Removed Pin From Net: NetName=NetU1_17 Pin=U2-12
+Added Component: Designator=C19(CAP_0805)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "RAD-0.3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33p"; VariantName = "[No Variations]"
+Added Component: Designator=IC5(SOIC16)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Stylized 3D Model Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "ULN2003A"; VariantName = "[No Variations]"
+Added Component: Designator=LSEG1(LED7SEG)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Colour"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.agilent.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Dec-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Schematic revised, PCB Footprint replaced."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MinimumIntensity"; Value = "2020 ucd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "IF = 10 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "H"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=LSEG2(LED7SEG)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Colour"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.agilent.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Dec-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Schematic revised, PCB Footprint replaced."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MinimumIntensity"; Value = "2020 ucd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "IF = 10 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "H"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=LSEG3(LED7SEG)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Colour"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.agilent.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Dec-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Schematic revised, PCB Footprint replaced."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MinimumIntensity"; Value = "2020 ucd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "IF = 10 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "H"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=LSEG4(LED7SEG)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Colour"; Value = "Blue"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.agilent.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Dec-2003"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Schematic revised, PCB Footprint replaced."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MinimumIntensity"; Value = "2020 ucd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "IF = 10 mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDocument"; Value = "24-Sep-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "H"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=RN1(RN4-0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RN2(RN4-0805)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U4(SOIC16)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=3V3 Pin=C19-1
+Added Pin To Net: NetName=GND Pin=C19-2
+Added Pin To Net: NetName=GND Pin=IC5-8
+Added Pin To Net: NetName=GND Pin=U4-8
+Added Pin To Net: NetName=3V3 Pin=U4-10
+Added Pin To Net: NetName=NetU1_17 Pin=U4-12
+Added Pin To Net: NetName=GND Pin=U4-13
+Added Pin To Net: NetName=3V3 Pin=U4-16
+Added Pin To Net: NetName=A Pin=LSEG1-7
+Added Pin To Net: NetName=A Pin=LSEG2-7
+Added Pin To Net: NetName=A Pin=LSEG3-7
+Added Pin To Net: NetName=A Pin=LSEG4-7
+Added Pin To Net: NetName=A Pin=RN1-1
+Added Net: Name=A
+Added Pin To Net: NetName=B Pin=LSEG1-6
+Added Pin To Net: NetName=B Pin=LSEG2-6
+Added Pin To Net: NetName=B Pin=LSEG3-6
+Added Pin To Net: NetName=B Pin=LSEG4-6
+Added Pin To Net: NetName=B Pin=RN1-2
+Added Net: Name=B
+Added Pin To Net: NetName=C Pin=LSEG1-4
+Added Pin To Net: NetName=C Pin=LSEG2-4
+Added Pin To Net: NetName=C Pin=LSEG3-4
+Added Pin To Net: NetName=C Pin=LSEG4-4
+Added Pin To Net: NetName=C Pin=RN1-3
+Added Net: Name=C
+Added Pin To Net: NetName=DIG0 Pin=IC5-13
+Added Pin To Net: NetName=DIG0 Pin=LSEG4-3
+Added Pin To Net: NetName=DIG0 Pin=LSEG4-8
+Added Net: Name=DIG0
+Added Pin To Net: NetName=DIG1 Pin=IC5-14
+Added Pin To Net: NetName=DIG1 Pin=LSEG3-3
+Added Pin To Net: NetName=DIG1 Pin=LSEG3-8
+Added Net: Name=DIG1
+Added Pin To Net: NetName=DIG2 Pin=IC5-15
+Added Pin To Net: NetName=DIG2 Pin=LSEG2-3
+Added Pin To Net: NetName=DIG2 Pin=LSEG2-8
+Added Net: Name=DIG2
+Added Pin To Net: NetName=DIG3 Pin=IC5-16
+Added Pin To Net: NetName=DIG3 Pin=LSEG1-3
+Added Pin To Net: NetName=DIG3 Pin=LSEG1-8
+Added Net: Name=DIG3
+Added Pin To Net: NetName=DP Pin=LSEG1-5
+Added Pin To Net: NetName=DP Pin=LSEG2-5
+Added Pin To Net: NetName=DP Pin=LSEG3-5
+Added Pin To Net: NetName=DP Pin=LSEG4-5
+Added Pin To Net: NetName=DP Pin=RN2-4
+Added Net: Name=DP
+Added Pin To Net: NetName=D Pin=LSEG1-2
+Added Pin To Net: NetName=D Pin=LSEG2-2
+Added Pin To Net: NetName=D Pin=LSEG3-2
+Added Pin To Net: NetName=D Pin=LSEG4-2
+Added Pin To Net: NetName=D Pin=RN1-4
+Added Net: Name=D
+Added Pin To Net: NetName=E Pin=LSEG1-1
+Added Pin To Net: NetName=E Pin=LSEG2-1
+Added Pin To Net: NetName=E Pin=LSEG3-1
+Added Pin To Net: NetName=E Pin=LSEG4-1
+Added Pin To Net: NetName=E Pin=RN2-1
+Added Net: Name=E
+Added Pin To Net: NetName=F Pin=LSEG1-9
+Added Pin To Net: NetName=F Pin=LSEG2-9
+Added Pin To Net: NetName=F Pin=LSEG3-9
+Added Pin To Net: NetName=F Pin=LSEG4-9
+Added Pin To Net: NetName=F Pin=RN2-2
+Added Net: Name=F
+Added Pin To Net: NetName=G Pin=LSEG1-10
+Added Pin To Net: NetName=G Pin=LSEG2-10
+Added Pin To Net: NetName=G Pin=LSEG3-10
+Added Pin To Net: NetName=G Pin=LSEG4-10
+Added Pin To Net: NetName=G Pin=RN2-3
+Added Net: Name=G
+Added Pin To Net: NetName=NetIC5_1 Pin=IC5-1
+Added Pin To Net: NetName=NetIC5_1 Pin=U1-45
+Added Net: Name=NetIC5_1
+Added Pin To Net: NetName=NetIC5_2 Pin=IC5-2
+Added Pin To Net: NetName=NetIC5_2 Pin=U1-46
+Added Net: Name=NetIC5_2
+Added Pin To Net: NetName=NetIC5_3 Pin=IC5-3
+Added Pin To Net: NetName=NetIC5_3 Pin=U1-21
+Added Net: Name=NetIC5_3
+Added Pin To Net: NetName=NetIC5_4 Pin=IC5-4
+Added Pin To Net: NetName=NetIC5_4 Pin=U1-22
+Added Net: Name=NetIC5_4
+Added Pin To Net: NetName=NetRN1_5 Pin=RN1-5
+Added Pin To Net: NetName=NetRN1_5 Pin=U4-3
+Added Net: Name=NetRN1_5
+Added Pin To Net: NetName=NetRN1_6 Pin=RN1-6
+Added Pin To Net: NetName=NetRN1_6 Pin=U4-2
+Added Net: Name=NetRN1_6
+Added Pin To Net: NetName=NetRN1_7 Pin=RN1-7
+Added Pin To Net: NetName=NetRN1_7 Pin=U4-1
+Added Net: Name=NetRN1_7
+Added Pin To Net: NetName=NetRN1_8 Pin=RN1-8
+Added Pin To Net: NetName=NetRN1_8 Pin=U4-15
+Added Net: Name=NetRN1_8
+Added Pin To Net: NetName=NetRN2_5 Pin=RN2-5
+Added Pin To Net: NetName=NetRN2_5 Pin=U4-7
+Added Net: Name=NetRN2_5
+Added Pin To Net: NetName=NetRN2_6 Pin=RN2-6
+Added Pin To Net: NetName=NetRN2_6 Pin=U4-6
+Added Net: Name=NetRN2_6
+Added Pin To Net: NetName=NetRN2_7 Pin=RN2-7
+Added Pin To Net: NetName=NetRN2_7 Pin=U4-5
+Added Net: Name=NetRN2_7
+Added Pin To Net: NetName=NetRN2_8 Pin=RN2-8
+Added Pin To Net: NetName=NetRN2_8 Pin=U4-4
+Added Net: Name=NetRN2_8
+Added Pin To Net: NetName=NetU1_14 Pin=U1-14
+Added Pin To Net: NetName=NetU1_14 Pin=U4-11
+Added Net: Name=NetU1_14
+Added Pin To Net: NetName=NetU1_15 Pin=U1-15
+Added Pin To Net: NetName=NetU1_15 Pin=U4-14
+Added Net: Name=NetU1_15
+Added Pin To Net: NetName=NetU1_32 Pin=U1-32
+Added Pin To Net: NetName=NetU1_32 Pin=U2-11
+Added Net: Name=NetU1_32
+Added Pin To Net: NetName=NetU1_33 Pin=U1-33
+Added Pin To Net: NetName=NetU1_33 Pin=U2-12
+Added Net: Name=NetU1_33
+Added Class: Name=7SEG
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power

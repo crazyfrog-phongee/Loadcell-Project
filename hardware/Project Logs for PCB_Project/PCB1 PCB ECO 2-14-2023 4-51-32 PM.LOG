@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=5V Pin=D1-2
+Removed Member From Class: ClassName=Debug Member=D1
+Added Pin To Net: NetName=5V Pin=J3-1
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=LCD
+Added Room: Name=MCU
+Added Room: Name=Power
