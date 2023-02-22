@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=U4 Old Footprint=SOP16 New Footprint=SO16
+Added Component: Designator=S1(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S2(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S3(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Component: Designator=S4(Screw 3 small)
+Add component. Clean all parameters for all variants
+Added Member To Class: ClassName=Power Member=Component S1 Screw
+Added Member To Class: ClassName=Power Member=Component S2 Screw
+Added Member To Class: ClassName=Power Member=Component S3 Screw
+Added Member To Class: ClassName=Power Member=Component S4 Screw
+Added Room: Name=7SEG
+Added Room: Name=Debug
+Added Room: Name=External ADC
+Added Room: Name=MCU
+Added Room: Name=Power
