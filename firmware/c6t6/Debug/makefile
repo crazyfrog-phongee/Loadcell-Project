@@ -60,8 +60,8 @@ all: main-build
 main-build: code.elf secondary-outputs
 
 # Tool invocations
-code.elf code.map: $(OBJS) $(USER_OBJS) D:\HUST\Junior\2022-1\TKTBD\c6t6\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "code.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\HUST\Junior\2022-1\TKTBD\c6t6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+code.elf code.map: $(OBJS) $(USER_OBJS) D:\HUST\Junior\2022-1\TKTBD\firmware\c6t6\STM32F103C6TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "code.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"D:\HUST\Junior\2022-1\TKTBD\firmware\c6t6\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="code.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

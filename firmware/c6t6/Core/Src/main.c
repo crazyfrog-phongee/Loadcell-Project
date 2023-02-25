@@ -18,12 +18,15 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "i2c.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "hx711.h"
 #include "hx711Config.h"
+#include "i2c-lcd.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,6 +48,7 @@
 /* USER CODE BEGIN PV */
 hx711_t loadcell;
 float weight;
+char buffer[10];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -86,10 +90,21 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
+
+  /* Initialize Loadcell with Module HX711 */
   hx711_init(&loadcell, HX711_CLK_GPIO_Port, HX711_CLK_Pin, HX711_DATA_GPIO_Port, HX711_DATA_Pin);
-  hx711_coef_set(&loadcell, 354.5); // read afer calibration
+
+  /* Reading after calibration */
+  hx711_coef_set(&loadcell, 354.5);
   hx711_tare(&loadcell, 10);
+
+  /* Init LCD1602 */
+  lcd_init();
+  lcd_clear();
+  lcd_put_cur(0, 0);
+  lcd_send_string("Khoi luong: ");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,8 +115,16 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+
+	  /* Read data, stored in weight variable */
 	  weight = hx711_weight(&loadcell, 10);
-	  HAL_Delay(1000);
+	  snprintf(buffer, sizeof buffer, "%f", weight); // @suppress("Float formatting support")
+
+	  /* Display on LCD */
+	  lcd_put_cur(1, 4);
+	  lcd_send_string(buffer);
+
+	  HAL_Delay(5000);
   }
   /* USER CODE END 3 */
 }
