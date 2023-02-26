@@ -1,0 +1,2 @@
+../Core/Src/74HC595.c:29:6:HC595_Init	8	static
+../Core/Src/74HC595.c:36:6:HC595_SendByte	24	static

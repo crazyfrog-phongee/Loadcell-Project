@@ -1,0 +1,6 @@
+../Core/Src/display.c:27:6:displayInt	16	static
+../Core/Src/display.c:39:6:displayFloat	24	static
+../Core/Src/display.c:73:6:displayInit	8	static
+../Core/Src/display.c:85:6:displayDigit	16	static
+../Core/Src/display.c:133:6:displayStop	8	static
+../Core/Src/display.c:142:6:displayResume	8	static
